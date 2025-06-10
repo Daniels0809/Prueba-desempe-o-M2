@@ -336,6 +336,8 @@ header .container{
     rgba(0,0,0,0.5)
     )
     ,url(media/Video-game.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 4px 4px 10px black;
     border-radius: 20px;
 
