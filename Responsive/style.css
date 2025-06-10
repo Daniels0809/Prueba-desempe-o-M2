@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h1{font-size: 3.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 10px 20px;
+}
+h2{font-size: 2.7em;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+h3{font-size: 2em;
+font-weight: bold;}
+
+p{font-size: 1.25em;}
+span{color: blueviolet;}
+
+header .container nav a{
+    padding: 10px;
+    
+}
+
+
+header .container a{  
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+}
+
+header .container a:hover{
+    color: blueviolet;
+}
+
+
+header .container{
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 10px black;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.me-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    height: 90vh;
+}
+
+#me-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image:
+    linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+     ),url(media/Hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#details{
+    background-image:url(media/Details.jpg);
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.texto{
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+}
+
+.texto:hover{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.carta1, .carta2, .carta3, .carta4{
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px black;
+}
+
+.carta1{
+    margin: 30px;
+    padding: 20px;
+    background-image:linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+     ), url(media/C++.jpg);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.carta1:hover{
+    transform: scale(1.03);
+}
+
+.carta2{
+    margin: 30px;
+    padding: 20px;
+    background-image: 
+    linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+     ),url(media/Python.jpg);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carta2:hover{
+    transform: scale(1.03);
+}
+
+.carta3{
+    margin: 30px;
+    padding: 20px;
+    background-image: 
+    linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+     ),url(media/HTML.jpeg);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carta3:hover{
+    transform: scale(1.03);
+}
+
+.carta4{
+    margin: 30px;
+    padding: 20px;
+    background-image: 
+    linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+     ),url(media/CSS.jpg);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carta4:hover{
+    transform: scale(1.03);
+}
+
+
+@media (min-width: 1024px) {
+    header{
+        width: 100%;
+    }
+
+    header .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container h2{
+        animation-duration: 1s;
+        animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from{
+            margin-left: 100%;
+            height: 300%;
+        }
+    }
+
+    .container nav{
+        animation-duration: 2s;
+        animation-name: slide;
+    }
+
+    @keyframes slide {
+        from{
+            margin-right: 100%;
+            height: 300%;
+        }
+    }
+
+    header.container a::before{
+        transition: ease-in-out;
+    }
+
+    h1{
+        font-size: 5em;
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .me-container{
+        padding-top: 200px;
+        width: 50%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center center;
+
+    }
+    
+
+    .content{
+        justify-content: space-around;
+    }
+
+    footer{
+        justify-content: flex-end;
+    }
+
+
+
+
+}
+
+
+#project{
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: 
+
+    url(media/Project-fondo.jpg);
+        background-size: cover;
+    background-position: center;
+    box-shadow: 4px 4px 10px black;
+    border-radius: 20px;
+   
+    
+
+}
+
+
+
+.container-project1{
+    display: flex;
+    background-image: 
+    linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url(media/Portfolio.jpeg);
+        background-size: cover;
+    background-position: center;
+    box-shadow: 4px 4px 10px black;
+    border-radius: 20px;
+
+}
+
+.container-project1:hover{
+    transform: scale(1.03);
+}
+
+.container-project2{
+    display: flex;
+    background-image: 
+    linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url(media/multimedia.jpg);
+        background-size: cover;
+    background-position: center;
+    box-shadow: 4px 4px 10px black;
+    border-radius: 20px;
+
+}
+
+.container-project2:hover{
+    transform: scale(1.03);
+}
+
+
+.container-project3{
+    display: flex;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-image: 
+    linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url(media/Video-game.jpg);
+    box-shadow: 4px 4px 10px black;
+    border-radius: 20px;
+
+}
+
+.container-project3:hover{
+    transform: scale(1.03);
+}
+
+.cont{
+    max-width: 900px;
+    margin: auto;
+}
+
+.text-p{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 35px;
+}
+
+#contact{
+    background-image: url(media/contact.jpg);
+}
+
+#profile{
+        background-image: url(media/contact.jpg);
+
+}
+
+.formulario{
+    background-color: rgb(126, 30, 155);
+    color: white;
+}
+
